@@ -37,11 +37,11 @@ out/
 *.nar
 *.ear
 *.zip
-*.tar.gz
+*.tar
 *.rar
 
 ### Exclusions ###
 !gradle/wrapper/gradle-wrapper.jar
-!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jargit
 !**/src/main/**
 !**/src/test/**
