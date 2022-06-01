@@ -27,9 +27,7 @@ public class CashbackHackServiceTest {
 
     @org.testng.annotations.Test
     public void shouldCheckSystemIfAmountIncorrect() {
-        int actual = service.remain(-100);
-        int expected = 0;
-        org.testng.Assert.assertEquals(actual, expected);
+        org.testng.Assert.assertThrows(RuntimeException.class, () -> {service.remain(-100);});
     }
 
     @org.testng.annotations.Test
@@ -38,5 +36,4 @@ public class CashbackHackServiceTest {
         int expected = 1;
         org.testng.Assert.assertEquals(actual, expected);
     }
-
 }
